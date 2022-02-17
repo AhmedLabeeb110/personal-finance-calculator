@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monetary Expert</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Main HTML Content-->
+    <header id="head-portion">
+      <h1 id="site-title">Monetray Expert</h1>
+    </header>
+    <main>
+      <section id="body-portion">
+        <section id="first-portion">
+          <section id="site-image">
+            <img src="img/img-1.png" alt="image" />
+          </section>
+        </section>
+
+        <section id="last-portion">
+          <section id="balance-statement">
+            <section id="income-statement">
+              <h2>Income</h2>
+              <div class="income-box">
+                <label for="income">Income: </label>
+                <input
+                  type="text"
+                  name="income"
+                  id="income-input"
+                  placeholder="$000"
+                />
+              </div>
+            </section>
+            <section id="expense-statement">
+              <h2>Expenses</h2>
+              <div class="expense-box-food expense-box">
+                <label for="expense">Food: </label>
+                <input
+                  type="text"
+                  name="food"
+                  id="food-input"
+                  placeholder="$000"
+                />
+              </div>
+              <div class="expense-box-rent expense-box">
+                <label for="rent">Rent: </label>
+                <input
+                  type="text"
+                  name="rent"
+                  id="rent-input"
+                  placeholder="$000"
+                />
+              </div>
+              <div class="expense-box-cloth expense-box">
+                <label for="cloth">Clothes: </label>
+                <input
+                  type="text"
+                  name="cloth"
+                  id="cloth-input"
+                  placeholder="$000"
+                />
+              </div>
+            </section>
+
+            <section id="calc-expense-statement">
+              <div class="calc-expense-btn">
+                <button class="btn-style" type="" id="calc-btn">
+                  Calculate
+                </button>
+                <label
+                  for="warning"
+                  class="warning"
+                  id="expense-warning"
+                ></label>
+              </div>
+              <div class="calc-expense-desc">
+                <h4 id="total-expense">
+                  Total Expenses: $<span id="price-total">0.00</span>
+                </h4>
+                <h4 id="balance">
+                  Balance: $<span id="price-balance">0.00</span>
+                </h4>
+              </div>
+            </section>
+
+            <section id="savings-statement">
+              <h2>Savings</h2>
+              <div class="savings-box">
+                <label for="save">Save: </label>
+                <input
+                  type="text"
+                  name="save"
+                  id="save-input"
+                  placeholder="$000"
+                />
+                <span id="percentage">%</span>
+                <button class="btn-style" id="save-btn">Save</button>
+                <br />
+                <label
+                  for="warning"
+                  class="warning"
+                  id="saving-warning"
+                ></label>
+              </div>
+            </section>
+
+            <section id="calc-savings-statement">
+              <div class="calc-save-desc">
+                <h4 id="saving-amount">
+                  Saving Amount: $<span id="price-saving">0.00</span>
+                </h4>
+                <h4 id="remaining-balance">
+                  Remaining Balance: $<span id="price-remaining">0.00</span>
+                </h4>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
